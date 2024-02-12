@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
     public class HealthUI : MonoBehaviour
     {
-        [SerializeField] public TextMeshProUGUI livesText;
+        public TextMeshProUGUI livesText;
         public void UpdateLives(float currentLives)
         {
             livesText.text = $"Health: {currentLives}";

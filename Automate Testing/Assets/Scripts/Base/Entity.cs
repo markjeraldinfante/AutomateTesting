@@ -20,9 +20,9 @@ public class Entity : MonoBehaviour
     }
     private void Start()
     {
-        //healthUI.UpdateLives(health.CurrentHealth);
+        healthUI.UpdateLives(health.CurrentHealth);
     }
-
+   
     public void TakeDamage(int damage)
     {
         health.Damage(damage);
@@ -42,6 +42,9 @@ public class Entity : MonoBehaviour
             healthUI.UpdateLives(health.CurrentHealth);
         };
     }
-
+    public float GetCurrentHealth()
+    {
+        return health.CurrentHealth;
+    }
 }
 
